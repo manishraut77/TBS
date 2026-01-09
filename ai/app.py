@@ -14,10 +14,14 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://mrtbs.vercel.app/diagnosis",  # or your custom domain
+    ],
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 class PredictRequest(BaseModel):
     imageUrl: str
