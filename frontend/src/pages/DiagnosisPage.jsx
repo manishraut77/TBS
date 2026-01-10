@@ -605,7 +605,7 @@ export default function DiagnosisPage() {
                           Something went wrong
                         </div>
                         <div style={styles.errorText}>
-                          {processMessage || "AI request failed. Please try again."}
+                          {processMessage || "AI request failed.  Please try again."}
                         </div>
                       </div>
                     ) : (
